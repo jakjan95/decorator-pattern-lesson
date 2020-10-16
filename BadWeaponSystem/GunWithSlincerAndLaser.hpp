@@ -2,13 +2,13 @@
 
 #include "Gun.hpp"
 
-class GunWithLaser : Gun {
+class GunWithSlincerAndLaser : Gun {
 public:
     std::string display() override {
-        return "Gun with laser";
+        return "Gun with slincer and laser";
     }
 
     double damage() override {
-        return Gun::damage() * 1.1;
+        return Gun::damage() * 1.1 + 5;
     }
 };

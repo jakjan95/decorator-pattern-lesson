@@ -6,6 +6,8 @@
 #include "Rifle.hpp"
 
 #include "GunWithLaser.hpp"
+#include "GunWithSlincer.hpp"
+#include "GunWithSlincerAndLaser.hpp"
 
 int main() {
     auto gun = std::make_unique<Gun>();
@@ -19,6 +21,11 @@ int main() {
     auto gunWithLaser = std::make_unique<GunWithLaser>();
     std::cout << gunWithLaser->display() << " damage " << gunWithLaser->damage() << '\n';
 
+    auto gunWithSlincer = std::make_unique<GunWithSlincer>();
+    std::cout << gunWithSlincer->display() << " damage " << gunWithSlincer->damage() << '\n';
+
+    auto gunWithSlincerAndLaser = std::make_unique<GunWithSlincerAndLaser>();
+    std::cout << gunWithSlincerAndLaser->display() << " damage " << gunWithSlincerAndLaser->damage() << '\n';
 
     return 0;
 }

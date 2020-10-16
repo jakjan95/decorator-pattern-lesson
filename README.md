@@ -14,8 +14,8 @@ The task is simple you need to implement system for three weapons:
 
 Each of those weapons should have possibility to mount:
 
-* Laser
-* Slincer
+* Laser (increase damage by 0.1)
+* Slincer (increase damage by 5)
 
 Each weapon should have:
 
@@ -25,9 +25,8 @@ Each weapon should have:
   * display()
 * Fields:
   * power
-  * capacity
-  * speed
   * accuracy
+  * capacity
 
 ## Your first attepmt
 

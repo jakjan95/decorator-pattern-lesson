@@ -33,7 +33,7 @@ Each weapon should have:
 BadweaponSystem - initial version of weapon system which is difficult to extend
 Code + uml
 
-## New requirements
+## New requirements - Problem!
 
 New weapons and extensions
 

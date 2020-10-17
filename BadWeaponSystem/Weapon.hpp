@@ -6,6 +6,8 @@
 class Weapon {
 public:
     virtual ~Weapon() = default;
+    Weapon() = default;
+
     Weapon(double power, size_t capacity, double accuracy)
         : power_{power}, capacity_{capacity}, accuracy_{accuracy} {}
 

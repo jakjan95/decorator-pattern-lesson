@@ -8,7 +8,7 @@ public:
         :  WeaponDecorator(weapon) {}
 
     std::string display() override {
-        return weapon_->display() + " with Slincer";
+        return weapon_->display() + " + Slincer";
     }
     double damage() override {
         return weapon_->damage() * 1.1;

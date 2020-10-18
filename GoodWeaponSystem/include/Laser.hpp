@@ -8,7 +8,7 @@ public:
         : WeaponDecorator(weapon) {}
 
     std::string display() override {
-        return weapon_->display() + " with Laser";
+        return weapon_->display() + " + Laser";
     }
     double damage() override {
         return weapon_->damage() + 5;

@@ -12,11 +12,13 @@ set(HEADERS
     include/WeaponDecorator.hpp
     include/Weapon.hpp
     include/Slincer.hpp
+    include/MachineGun.hpp
     )
 
 set(SRC
     src/Gun.cpp
     src/Weapon.cpp
+    src/MachineGun.cpp
     )
 
 add_library(${PROJECT_NAME}-lib STATIC ${SRC})

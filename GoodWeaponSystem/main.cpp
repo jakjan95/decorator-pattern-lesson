@@ -3,6 +3,7 @@
 #include "Gun.hpp"
 #include "Laser.hpp"
 #include "Slincer.hpp"
+#include "MachineGun.hpp"
 
 
 int main() {
@@ -19,6 +20,12 @@ int main() {
 
     std::cout << gunWithLaserAndSlincer->display() << " damage " << gunWithLaserAndSlincer->damage() << '\n';
 
+
+    std::unique_ptr<Weapon> machineGunWithLaserAndSlincer = std::make_unique<MachineGun>(20, 30, 0.5);
+    machineGunWithLaserAndSlincer = std::make_unique<Laser>(std::move(machineGunWithLaserAndSlincer));
+    machineGunWithLaserAndSlincer = std::make_unique<Slincer>(std::move(machineGunWithLaserAndSlincer));
+
+    std::cout << machineGunWithLaserAndSlincer->display() << " damage " << machineGunWithLaserAndSlincer->damage() << '\n';
 
     return 0;
 }

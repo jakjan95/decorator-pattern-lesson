@@ -14,7 +14,7 @@ The task is simple you need to implement system for three weapons:
 
 Each of those weapons should have possibility to mount:
 
-* Laser (increase damage by 0.1)
+* Laser (increase damage by 0.1 factor)
 * Slincer (increase damage by 5)
 
 Each weapon should have:
@@ -30,22 +30,42 @@ Each weapon should have:
 
 ## Your first attepmt
 
-BadweaponSystem - initial version of weapon system which is difficult to extend
-Code + uml
+Initial version of WeaponSystem which you produced is called **BadWeaponSystem**, reason of that name comes from system design and it's difficulties with extensions.
+
+uml
 
 ## New requirements - Problem!
 
-New weapons and extensions
+Game is getting more popular and players get bored using only 3 weapons also they want more extensions for weapons. Company want to make game more interesting and challenging.
+
+You get task to add more stuff to game:
+* Weapons:
+  * SniperRifle
+  * Shotgun
+  * Carabin
+  * Bazooka
+
+* Extensions:
+  * Lunette
+  * ImprovedAmmunitionModule
+  * AimingHolder
+  * CammoSkin
 
 ## Solution to the problem - decorator pattern
 
-uml, definition, rules
+You realise that you will have a lot of work. Also in future you will must write a lot of new code. There must be a better solution for this weapon system. This solution is called Decorator Design Pattern.
+
+## Decorator Design Pattern
+
+**The Decorator Pattern** attaches additional responsibilites to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+Decorator helps you to follow  of open/close rule from S(O)LID principle :)
 
 ## Refactoring of weapon system code using decorator pattern
 
-GoodWeaponSystem - weapon system created with using of decorator pattern
+You rewrited your weapon system using *Decorator Design Pattern* and created **GoodWeaponSystem** which will be very easy to extend without modifying existing code and will make your live easier during future releases of the game.
 
-Code + uml
+uml
 
 ## Homework
 

@@ -76,4 +76,5 @@ You rewrited your weapon system using *Decorator Design Pattern* and created **G
 Fork repo and work on branch *homework*
 
 * Add to GoodWeaponSystem stuff mentioned in New Requirements.
-* Refactor a code in CoffeShopSystem in homework directory 
+* Refactor a code in CoffeShopSystem in homework directory using Decorator Patern.
+  * Divide decorators(Soy, Milk, Whip) into separate code.

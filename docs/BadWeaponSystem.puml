@@ -1,0 +1,50 @@
+@startuml BadWeaponSystem
+class Weapon{
+    -power_
+    -capacity_
+    -ammunitionAmount_
+    -accuracy_
+    +display()
+    +damage() 
+    +fire() 
+    +reload()
+}
+
+class Gun{
+    +display()
+    +damage()
+}
+
+class MachineGun{
+    +display()
+    +damage()
+}
+
+class Rifle{
+    +display()
+    +damage()
+}
+
+Weapon <|.down. Gun
+Weapon <|.down. MachineGun
+Weapon <|.down. Rifle
+
+class GunWithLaser{
+    +display()
+    +damage()
+}
+class GunWithSlincer{
+    +display()
+    +damage()
+}
+
+class GunWithSlincerAndLaser{
+    +display()
+    +damage()
+}
+
+Gun <|-down- GunWithLaser
+Gun <|-down- GunWithSlincer
+Gun <|-down- GunWithSlincerAndLaser
+
+@enduml

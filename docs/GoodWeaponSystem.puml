@@ -1,0 +1,59 @@
+@startuml GoodWeaponSystem
+
+class Weapon{
+    -capacity_
+    -ammunitionAmount_
+    +display()
+    +damage()
+    +fire()
+    +reload()
+}
+
+class Gun{
+    -power_
+    -accuracy_
+    +display()
+    +damage() 
+}
+
+class MachineGun{
+    -power_
+    -accuracy_
+    +display()
+    +damage() 
+}
+
+
+class Rifle{
+    -power_
+    -accuracy_
+    +display()
+    +damage() 
+}
+
+class WeaponDecorator{
+    -weapon_
+}
+
+Weapon <|.down. Gun
+Weapon <|.down. MachineGun
+Weapon <|.down. Rifle
+
+
+class Laser{
+    +display()
+    +damage() 
+}
+
+class Slincer{
+    +display()
+    +damage() 
+}
+
+Weapon <|-down- WeaponDecorator
+WeaponDecorator <|-down- Laser
+WeaponDecorator <|-down- Slincer
+
+WeaponDecorator o--Weapon
+
+@enduml

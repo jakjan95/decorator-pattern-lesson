@@ -1,0 +1,27 @@
+@startuml decorator-schema
+
+abstract class Component{
+    +operation()
+}
+
+class ConcreteComponent{
+    +operation()
+}
+
+abstract class Decorator{
+    -component
+    +operation()
+}
+
+Component <|.down. ConcreteComponent
+Component <|.down. Decorator
+
+
+class ConceretDecorator{
+    +operation
+}
+
+Decorator <|-down- ConceretDecorator
+Decorator o-- Component
+
+@enduml

@@ -11,6 +11,7 @@ set(HEADERS
     include/Laser.hpp
     include/WeaponDecorator.hpp
     include/Weapon.hpp
+    include/Slincer.hpp
     )
 
 set(SRC

@@ -2,10 +2,10 @@
 
 #include "WeaponDecorator.hpp"
 
-class Laser : WeaponDecorator {
+class Laser : public WeaponDecorator {
 public:
     Laser(std::shared_ptr<Weapon> weapon)
-        : weapon_{weapon} {}
+        : WeaponDecorator(weapon) {}
 
     std::string display() override {
         return weapon_->display() + " with Laser";
@@ -13,7 +13,4 @@ public:
     double damage() override {
         return weapon_->damage() + 5;
     }
-
-private:
-    std::shared_ptr<Weapon> weapon_;
 };

@@ -32,14 +32,16 @@ Each weapon should have:
 
 Initial version of WeaponSystem which you produced is called **BadWeaponSystem**, reason of that name comes from system design and it's difficulties with extensions.
 
-uml
+![Alt text](./docs/out/docs/BadWeaponSystem/BadWeaponSystem.svg)
 
-## New requirements - Problem!
+## New requirements - Problem
 
 Game is getting more popular and players get bored using only 3 weapons also they want more extensions for weapons. Company want to make game more interesting and challenging.
 
 You get task to add more stuff to game:
+
 * Weapons:
+
   * SniperRifle
   * Shotgun
   * Carabin
@@ -59,15 +61,19 @@ You realise that you will have a lot of work. Also in future you will must write
 
 **The Decorator Pattern** attaches additional responsibilites to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
+![Alt text](./docs/out/docs/decorator-schema/decorator-schema.svg)
+
 Decorator helps you to follow  of open/close rule from S(O)LID principle :)
 
 ## Refactoring of weapon system code using decorator pattern
 
 You rewrited your weapon system using *Decorator Design Pattern* and created **GoodWeaponSystem** which will be very easy to extend without modifying existing code and will make your live easier during future releases of the game.
 
-uml
+![Alt text](./docs/out/docs/GoodWeaponSystem/GoodWeaponSystem.svg)
 
 ## Homework
 
-More weapons and extensions for them(GoodWeaponSystem)
-Simple example to refactor
+Fork repo and work on branch *homework*
+
+* Add to GoodWeaponSystem stuff mentioned in New Requirements.
+* Refactor a code in CoffeShopSystem in homework directory 

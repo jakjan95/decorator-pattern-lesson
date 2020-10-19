@@ -78,3 +78,7 @@ Fork repo and work on branch *homework*
 * Add to GoodWeaponSystem stuff mentioned in New Requirements.
 * Refactor a code in CoffeShopSystem in homework directory using Decorator Patern.
   * Divide decorators(Soy, Milk, Whip) into separate code.
+
+## Source
+
+Lesson prepared based on book **Head First Design Patterns: A Brain-Friendly Guide**, Eric Freeman, Elisabeth Robson, Bert Bates, Kathy Sierra
